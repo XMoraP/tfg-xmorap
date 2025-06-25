@@ -1,0 +1,33 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DonQuixBot™</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="icon" type="image/x-icon" href="images/don_quixote_favicon.ico">
+  <script src="javascripts/index.js" defer></script>
+</head>
+<body>
+  <div class="mode-selection">
+    <h1>DonQuixBot™</h1>
+    <p class="mode-desc">Esta aplicación presenta un gemelo digital de Don Quijote, desarrollado con el modelo LLaMA 3.2 de 3B. El sistema ha sido diseñado para experimentar con diferentes niveles de complejidad en el procesamiento del lenguaje, como la ingeniería de prompts, la generación aumentada por recuperación (RAG) y el ajuste fino del modelo (fine-tuning). Estas técnicas permiten observar cómo varía la coherencia, profundidad y estilo de las respuestas, acercándose cada vez más al carácter literario original.</p>
+    <div class="mode-cards">
+      <button class="mode-card" data-mode="llama_prompt">
+        <h2>Modo Prompt</h2>
+        <p><strong>Modelo:</strong> LLaMA 3.2 3B</p>
+        <p>Este enfoque utiliza instrucciones diseñadas cuidadosamente para guiar al modelo en sus respuestas. Es ideal para conversaciones simples y cotidianas, como saludos, preguntas generales o comentarios informales. Ofrece una interacción rápida, natural y accesible, sin el uso de información adicional o contexto externo.</p>
+      </button>
+      <button class="mode-card" data-mode="llama_prompt_rag">
+        <h2>Modo RAG</h2>
+        <p><strong>Modelo:</strong> LLaMA 3.2 3B</p>
+        <p>El modelo utiliza fragmentos del texto original de *Don Quijote* mediante RAG (Retrieval-Augmented Generation) para enriquecer sus respuestas. Es especialmente útil en diálogos informales con referencias a la obra, como “hola, ¿qué opinas de…?”. Combina un estilo conversacional fluido con toques auténticos del texto cervantino.
+        </p>
+      </button>
+      <button class="mode-card" data-mode="llama_finetuning">
+        <h2>Modo Fine-Tune</h2>
+        <p><strong>Modelo:</strong> LLaMA 3.2 3B Fine-Tuned</p>
+        <p>En esta versión, el modelo ha sido ajustado específicamente con datos del Quijote y la interacción es directa con el modelo, sin prompting y sin RAG. Es la opción más fiel al estilo, tono y visión del personaje. Ideal para conversaciones sobre las historias de la obra, con un lenguaje más arcaico y auténtico.</p>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

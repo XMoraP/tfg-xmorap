@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DonQuixBot™</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="icon" type="image/x-icon" href="images/don_quixote_favicon.ico">
+  <script src="javascripts/chat_llama_ft.js" defer></script>
+  <script src="javascripts/sidebar.js" defer></script>
+  <script src="javascripts/chat.js" defer></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+</head>
+<body>
+
+    <header id="chatHeader" class="chat-header">
+        <button id="menuToggle" class="chat-header__menu" aria-label="Abrir menú">
+          <!-- icono hamburguesa -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="chat-header__logo"><a href="/" class="sin-enlace">DonQuixBot™</a></div>
+    </header>
+    <aside id="chatSidebar" class="chat-sidebar">
+        <ul class="chat-sidebar__list">
+          <li class="chat-sidebar__item"><a href="/" class="sin-enlace">🏰 Inicio </a></li>
+          <li class="chat-sidebar__item" data-event="llama_prompt">⚔️ Modo Prompt</li>
+          <li class="chat-sidebar__item" data-event="llama_prompt_rag">🏹 Modo RAG</li>
+          <li class="chat-sidebar__item" data-event="llama_finetuning">🛡️ Modo Fine-Tune</li>
+        </ul>
+    </aside>
+
+      
+      
