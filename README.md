@@ -85,3 +85,7 @@ Ollama modelo:
 ```bash
 ollama run <modelo>
 ```
+## Licencia
+Este proyecto está licenciado bajo la [MIT License](./LICENSE).
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
